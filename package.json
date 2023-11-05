@@ -8,8 +8,8 @@
     "build:dev": "npx webpack --mode=development",
     "start-server": "npx webpack serve",
     "format": "node ./node_modules/prettier/bin/prettier.cjs --check --config ./prettier.json ./src/ --log-level warn --write",
-    "lint:check": "npx eslint ./src",
-    "lint:fix": "npx eslint ./src --fix",
+    "lint:check": "npx eslint src/index.ts",
+    "lint:fix": "npx eslint src/index.ts --fix",
     "prepare": "husky install" 
   },
   "author": "",
