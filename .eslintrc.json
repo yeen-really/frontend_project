@@ -11,5 +11,6 @@
     "rules": {
         // "intent": ["error", "tab"]
         // "no-tabs": 0
+        "linebreak-style": ["error", "windows"]
     }
 }
