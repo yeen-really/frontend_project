@@ -18,20 +18,27 @@ module.exports = {
         }),
         new HTMLInlineCSSWebpackPlugin(),
         new MiniCssExtractPlugin({
-            filename: 'index.css'
+            filename: '[name].css',
+            chunkFilename: '[id].css'
         })
     ],
     module: {
         rules: [
-        {
-            test: /\.css$/i,
-            use: [MiniCssExtractPlugin.loader, 'css-loader']
-        },
-        {
-            test: /\.tsx?$/,
-            use: 'ts-loader',
-            exclude: /node-modules/,
-        }
+            {
+                test: /\.css$/i,
+                use: [MiniCssExtractPlugin.loader, 'css-loader']
+            },
+            {
+                test: /\.tsx?$/,
+                use: 'ts-loader',
+                exclude: /node-modules/,
+            }
         ],
-    }
+    },
+    devServer: {
+        open: true,
+        liveReload:true,
+        static: path.resolve(__dirname, './src')
+    },
+    target: 'web',
 };
