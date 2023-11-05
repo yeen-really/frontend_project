@@ -1,4 +1,4 @@
-import './index.css'
+// import './index.css';
 
-const num = 6
-console.log(num)
+// const num = 6;
+// console.log(num);

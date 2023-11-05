@@ -9,7 +9,7 @@
         "sourceType": "module"
     },
     "rules": {
-        "intent": ["error", "tab"],
-        "no-tabs": 0
+        // "intent": ["error", "tab"]
+        // "no-tabs": 0
     }
 }
