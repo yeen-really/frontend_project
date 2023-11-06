@@ -1,6 +1,5 @@
 // 1
 
-
 let nums = [100, 150, 200, 250];
 let numsResult = [];
 
